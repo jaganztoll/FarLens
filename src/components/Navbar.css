@@ -1,0 +1,53 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(53, 53, 53, 0.8);
+    /* leicht transparent */
+    color: #ecebf3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #ecebf3;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a.fc3:hover {
+    color: #364b62;
+    /* Far Cry 3 */
+}
+
+.nav-links a.fc4:hover {
+    color: #db3366;
+    /* Far Cry 4 */
+}
+
+.nav-links a.fc5:hover {
+    color: #a7cc99;
+    /* Far Cry 5 */
+}
+
+.nav-links a.fc6:hover {
+    color: #dc131e;
+    /* Far Cry 6 */
+}
