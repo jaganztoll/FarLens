@@ -3,8 +3,8 @@
 :root {
   --bg-dark: #353535;
   --bg-light: #ecebf3;
-  --text-dark: #111;
-  --text-light: #f5f5f5;
+  --text-dark: #353535;
+  --text-light: #ecebf3;
   --font-primary: 'Inter', sans-serif;
 
   /* Akzentfarben */

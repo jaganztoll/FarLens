@@ -3,51 +3,224 @@
     top: 0;
     width: 100%;
     background: rgba(53, 53, 53, 0.8);
-    /* leicht transparent */
     color: #ecebf3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    padding: 5rem 2rem 1rem;
     z-index: 1000;
     backdrop-filter: blur(8px);
 }
 
-.logo {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
+.navbar-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    padding-top: 0;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo img {
+    height: 48px;
+}
+
+.center-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.personal-logo {
+    position: absolute;
+    top: -5rem;
+}
+
+.personal-logo img {
+    height: 48px;
+}
+
+.nav-locations {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-locations a {
+    position: relative;
+    color: #ecebf3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.nav-locations a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: 2.5px;
+    background-color: currentColor;
+}
+
+/* Hover colors for locations */
+.nav-locations a.fc3:hover {
+    color: #708090;
+}
+
+.nav-locations a.fc4:hover {
+    color: #db3366;
+}
+
+.nav-locations a.fc5:hover {
+    color: #a7cc99;
+}
+
+.nav-locations a.fc6:hover {
+    color: #dc131e;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links a {
     color: #ecebf3;
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    font-weight: 250;
     transition: color 0.3s ease;
 }
 
-.nav-links a.fc3:hover {
-    color: #364b62;
-    /* Far Cry 3 */
+.nav-links a:hover {
+    color: #ccc;
 }
 
-.nav-links a.fc4:hover {
-    color: #db3366;
-    /* Far Cry 4 */
+/* ============ */
+/*  responsive  */
+/* ============ */
+
+/* Burger-Icon (Mobile) */
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    color: #ecebf3;
+    margin-left: 1rem;
 }
 
-.nav-links a.fc5:hover {
-    color: #a7cc99;
-    /* Far Cry 5 */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
 }
 
-.nav-links a.fc6:hover {
-    color: #dc131e;
-    /* Far Cry 6 */
+/* Desktop */
+.desktop-only {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-top: 0;
+        gap: 1.5rem;
+    }
+
+    .personal-logo {
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-logo {
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+
+    .site-logo img,
+    .personal-logo img {
+        height: 40px;
+    }
+
+    .center-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-locations {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .nav-locations a {
+        display: block;
+        width: 125px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Burger-Menü oben rechts */
+    .burger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 1100;
+        font-size: 2rem;
+        cursor: pointer;
+        user-select: none;
+        color: #ecebf3;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
 }
