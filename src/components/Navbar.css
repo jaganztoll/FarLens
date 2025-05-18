@@ -30,6 +30,7 @@
 .site-logo {
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 .site-logo img {
@@ -46,6 +47,7 @@
     position: absolute;
     opacity: 0.7;
     filter: grayscale(100%);
+    user-select: none;
 }
 
 .personal-logo img {
@@ -96,6 +98,26 @@
 
 .nav-locations a.fc6:hover {
     color: #dc131e;
+}
+
+.nav-locations a.fc3::selection {
+    background-color: #364b62;
+    color: #ecebf3;
+}
+
+.nav-locations a.fc4::selection {
+    background-color: #db3366;
+    color: #ecebf3;
+}
+
+.nav-locations a.fc5::selection {
+    background-color: #a7cc99;
+    color: #353535;
+}
+
+.nav-locations a.fc6::selection {
+    background-color: #dc131e;
+    color: #ecebf3;
 }
 
 .nav-right {
@@ -149,14 +171,17 @@
     display: flex;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+/* ------------------ Responsive ------------------ */
+
+/* Mobile & Tablet */
+@media (max-width: 1350px) {
     .navbar-content {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
         padding-top: 0;
         position: relative;
+        flex-wrap: nowrap;
     }
 
     .site-logo,
@@ -164,6 +189,7 @@
         position: static;
         display: flex;
         justify-content: center;
+        margin-bottom: 0.5rem;
     }
 
     .site-logo img,
@@ -172,16 +198,21 @@
     }
 
     .center-section {
+        position: static;
+        transform: none;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
     .nav-locations {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         width: 100%;
     }
 
@@ -192,7 +223,6 @@
         margin: 0 auto;
     }
 
-    /* Burger-Menü anzeigen */
     .burger {
         display: block;
         position: absolute;
@@ -201,7 +231,6 @@
         z-index: 1100;
     }
 
-    /* Desktop-Navigation ausblenden */
     .desktop-only {
         display: none;
     }
@@ -217,10 +246,41 @@
     }
 }
 
-@media (min-width: 769px) {
+/* Desktop */
+@media (min-width: 1351px) {
+    .navbar-content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
     .center-section {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        flex-grow: 0;
+        margin: 0;
+    }
+
+    .nav-locations {
+        flex-direction: row;
+        gap: 5rem;
+        margin-top: 4rem;
+        flex-wrap: nowrap;
+    }
+
+    .personal-logo {
+        position: absolute;
+        opacity: 0.7;
+        filter: grayscale(100%);
+        margin-bottom: 0;
+    }
+
+    .desktop-only {
+        display: flex;
+    }
+
+    .burger {
+        display: none;
     }
 }
