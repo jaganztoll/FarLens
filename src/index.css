@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
 
+/* ========================= */
+/* Variables & Base Settings */
+/* ========================= */
+
 :root {
   --bg-dark: #353535;
   --bg-light: #ecebf3;
@@ -7,7 +11,6 @@
   --text-light: #ecebf3;
   --font-primary: 'Inter', sans-serif;
 
-  /* Akzentfarben */
   --accent-fc3: #364b62;
   --accent-fc4: #db3366;
   --accent-fc5: #a7cc99;
@@ -20,27 +23,169 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--bg-light);
   color: var(--text-dark);
   font-family: var(--font-primary);
+  font-size: 1rem;
   line-height: 1.6;
 }
 
+/* ========================= */
+/* Layout Container          */
+/* ========================= */
+
+.container {
+  width: 100%;
+  max-width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ========================= */
+/* Sections                  */
+/* ========================= */
+
 section {
-  padding: 4rem 1rem;
-  max-width: 1000px;
+  padding: 6rem 1rem;
+  width: 100%;
+}
+
+.hero-carousel {
+  padding: 0 !important;
+}
+
+section.narrow {
+  max-width: 700px;
   margin: 0 auto;
 }
 
-img {
+/* ========================= */
+/* Headings & Text           */
+/* ========================= */
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1.125rem;
+  max-width: 65ch;
+  margin-bottom: 1.5rem;
+}
+
+/* ========================= */
+/* Responsive Images         */
+/* ========================= */
+
+.hero img {
   max-width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
   border-radius: 8px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-img:hover {
+.hero img:hover {
   transform: scale(1.02);
+}
+
+.gallery img {
+  max-width: 45%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* Utility / Helpers         */
+/* ========================= */
+
+.text-center {
+  text-align: center;
+}
+
+.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ========================= */
+/* Media Queries             */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+
+  section {
+    padding: 5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
 }

@@ -2,20 +2,27 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(53, 53, 53, 0.8);
+    background: rgba(35, 35, 35, 0.8);
     color: #ecebf3;
-    padding: 5rem 2rem 1rem;
+    padding: 4rem 1rem 0.5rem;
     z-index: 1000;
     backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid rgba(236, 235, 243, 0.1);
+}
+
+.navbar.scrolled {
+    background: rgba(53, 53, 53, 0.9);
+    backdrop-filter: blur(12px);
 }
 
 .navbar-content {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
     width: 100%;
     padding-top: 0;
 }
@@ -30,37 +37,38 @@
 }
 
 .center-section {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
 }
 
 .personal-logo {
     position: absolute;
-    top: -5rem;
+    opacity: 0.7;
+    filter: grayscale(100%);
 }
 
 .personal-logo img {
-    height: 48px;
+    height: 42px;
 }
 
 .nav-locations {
     list-style: none;
     display: flex;
     gap: 5rem;
+    margin-top: 4rem;
 }
 
 .nav-locations a {
-    position: relative;
     color: #ecebf3;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
     padding-bottom: 0.25rem;
+    position: relative;
     display: inline-block;
+    transition: color 0.3s ease;
 }
 
 .nav-locations a::after {
@@ -69,12 +77,11 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 125px;
-    height: 2.5px;
+    width: 130px;
+    height: 2px;
     background-color: currentColor;
 }
 
-/* Hover colors for locations */
 .nav-locations a.fc3:hover {
     color: #708090;
 }
@@ -96,6 +103,7 @@
     align-items: center;
 }
 
+/* Desktop-Navigation */
 .nav-links {
     list-style: none;
     display: flex;
@@ -107,18 +115,15 @@
 .nav-links a {
     color: #ecebf3;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 250;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ccc;
 }
-
-/* ============ */
-/*  responsive  */
-/* ============ */
 
 /* Burger-Icon (Mobile) */
 .burger {
@@ -130,6 +135,7 @@
     margin-left: 1rem;
 }
 
+/* Mobile-Menü */
 .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -138,29 +144,23 @@
     align-items: center;
 }
 
-/* Desktop */
+/* Desktop-Only anzeigen */
 .desktop-only {
     display: flex;
-    gap: 1.5rem;
 }
 
-/* Mobil */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .navbar-content {
         flex-direction: column;
         align-items: center;
-        position: relative;
-        padding-top: 0;
         gap: 1.5rem;
+        padding-top: 0;
+        position: relative;
     }
 
+    .site-logo,
     .personal-logo {
-        position: static;
-        display: flex;
-        justify-content: center;
-    }
-
-    .site-logo {
         position: static;
         display: flex;
         justify-content: center;
@@ -181,7 +181,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         width: 100%;
     }
 
@@ -192,19 +192,16 @@
         margin: 0 auto;
     }
 
-    /* Burger-Menü oben rechts */
+    /* Burger-Menü anzeigen */
     .burger {
         display: block;
         position: absolute;
         top: 1rem;
         right: 2rem;
         z-index: 1100;
-        font-size: 2rem;
-        cursor: pointer;
-        user-select: none;
-        color: #ecebf3;
     }
 
+    /* Desktop-Navigation ausblenden */
     .desktop-only {
         display: none;
     }
@@ -216,11 +213,14 @@
     }
 
     .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
         width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .center-section {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

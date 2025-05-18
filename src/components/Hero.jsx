@@ -1,10 +1,36 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
 import "./Hero.css";
+
+const images = [
+  "/assets/fc3/candy-hartawan-yOajPc4fBUU-unsplash.jpg",
+  "/assets/fc4/tim-van-kempen-mpYKQK3GzSE-unsplash.jpg",
+  "/assets/fc5/steven-cordes-HD0D7bKZ_4k-unsplash.jpg",
+  "/assets/fc6/alexander-kunze-uLh71gTmZ4g-unsplash.jpg",
+];
 
 function Hero() {
   return (
-    <section className="hero">
-      <h1>Far Cry Real World Gallery</h1>
-      <p>Discover real locations behind the games.</p>
+    <section className="hero-carousel">
+      <Swiper
+        modules={[Autoplay, EffectFade]}
+        loop={true}
+        effect="fade"
+        speed={1000}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={1}
+      >
+        {images.map((src, index) => (
+          <SwiperSlide key={index}>
+            <img src={src} alt={`Far Cry location ${index + 1}`} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }
