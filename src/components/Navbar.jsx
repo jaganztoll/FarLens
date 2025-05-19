@@ -64,7 +64,7 @@ function Navbar() {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#footer">Contact</a>
             </li>
             <li>
               <a
@@ -97,7 +97,7 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" onClick={closeMenu}>
+                  <a href="#footer" onClick={closeMenu}>
                     Contact
                   </a>
                 </li>

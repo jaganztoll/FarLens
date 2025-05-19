@@ -1,0 +1,4 @@
+#about *::selection {
+    background-color: var(--dark-90);
+    color: var(--light);
+}

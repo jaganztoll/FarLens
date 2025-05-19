@@ -116,6 +116,11 @@
     color: var(--light);
 }
 
+.nav-links a::selection {
+    background-color: var(--light-90);
+    color: var(--dark);
+}
+
 .nav-right {
     display: flex;
     align-items: center;

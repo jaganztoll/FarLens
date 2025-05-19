@@ -2,7 +2,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <p>
         &copy; {new Date().getFullYear()} FarLens – Photography inspired by Far
         Cry
