@@ -15,7 +15,7 @@ const images = [
 
 function Hero() {
   return (
-    <section className="hero-carousel">
+    <section id="hero" className="hero-carousel">
       <Swiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         navigation={true}

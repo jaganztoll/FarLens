@@ -58,7 +58,7 @@ function Navbar() {
           {/* Desktop Menü */}
           <ul className="nav-links desktop-only">
             <li>
-              <a href="#home">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -87,7 +87,7 @@ function Navbar() {
             <div className="mobile-menu">
               <ul className="nav-links">
                 <li>
-                  <a href="#home" onClick={closeMenu}>
+                  <a href="#hero" onClick={closeMenu}>
                     Home
                   </a>
                 </li>
@@ -102,7 +102,11 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="#portfolio" onClick={closeMenu}>
+                  <a
+                    href="https://juliangruber.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Portfolio
                   </a>
                 </li>

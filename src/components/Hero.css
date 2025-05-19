@@ -25,8 +25,8 @@
 .swiper-button-prev,
 .swiper-button-next {
     color: var(--light);
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     background-color: var(--dark-30);
     border-radius: 50%;
     backdrop-filter: blur(0px);
@@ -60,17 +60,59 @@
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--light);
     transform: scale(1.4);
 }
 
-.hero-text {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    text-align: center;
-    color: var(--light);
-    background: var(--dark-40);
-    padding: 1rem;
-    font-weight: 400;
+/* Farbe für den aktiven ersten Punkt */
+.swiper-pagination-bullet:nth-child(1).swiper-pagination-bullet-active {
+    background-color: var(--accent-fc3);
+}
+
+/* Farbe für den aktiven zweiten Punkt */
+.swiper-pagination-bullet:nth-child(2).swiper-pagination-bullet-active {
+    background-color: var(--accent-fc4);
+}
+
+/* Farbe für den aktiven dritten Punkt */
+.swiper-pagination-bullet:nth-child(3).swiper-pagination-bullet-active {
+    background-color: var(--accent-fc5);
+}
+
+/* Farbe für den aktiven vierten Punkt */
+.swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active {
+    background-color: var(--accent-fc6);
+}
+
+/* Mobile */
+@media (max-width: 1350px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px;
+    }
+
+    .swiper-pagination {
+        bottom: 1rem;
+        gap: 6px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+    }
+
+    .swiper-pagination-bullet-active {
+        transform: scale(1.2);
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
 }
