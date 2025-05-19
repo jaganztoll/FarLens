@@ -22,13 +22,55 @@
     object-fit: cover;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--light);
+    width: 65px;
+    height: 65px;
+    background-color: var(--dark-30);
+    border-radius: 50%;
+    backdrop-filter: blur(0px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--dark-40);
+    backdrop-filter: blur(6px);
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--light-50);
+    border-radius: 50%;
+    opacity: 1;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--light);
+    transform: scale(1.4);
+}
+
 .hero-text {
     position: absolute;
     bottom: 2rem;
     width: 100%;
     text-align: center;
-    color: #ecebf3;
-    background: rgba(0, 0, 0, 0.4);
+    color: var(--light);
+    background: var(--dark-40);
     padding: 1rem;
     font-weight: 400;
 }

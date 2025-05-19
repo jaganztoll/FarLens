@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./Hero.css";
 
 const images = [
@@ -15,7 +17,9 @@ function Hero() {
   return (
     <section className="hero-carousel">
       <Swiper
-        modules={[Autoplay, EffectFade]}
+        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        navigation={true}
+        pagination={true}
         loop={true}
         effect="fade"
         speed={1000}
@@ -23,6 +27,8 @@ function Hero() {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        allowTouchMove={false}
+        watchSlidesProgress={true}
         slidesPerView={1}
       >
         {images.map((src, index) => (

@@ -67,7 +67,13 @@ function Navbar() {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a
+                href="https://juliangruber.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Portfolio
+              </a>
             </li>
           </ul>
 
@@ -76,7 +82,7 @@ function Navbar() {
             {menuOpen ? "✕" : "☰"}
           </div>
 
-          {/* Mobile Menü mit Links UND Locations */}
+          {/* Mobile Menü mit Links & Locations */}
           {menuOpen && (
             <div className="mobile-menu">
               <ul className="nav-links">
