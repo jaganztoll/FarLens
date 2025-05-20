@@ -4,7 +4,7 @@ import "../styles/Gallery.css";
 
 const Gallery = ({ galleries }) => {
   return (
-    <section className="gallery-row">
+    <section id="gallery" className="gallery-row">
       {galleries.map(({ id, title, location, images, color }) => {
         const previewIndex =
           id === 1 ? 1 : id === 2 ? 15 : id === 3 ? 10 : id === 4 ? 2 : 0;
