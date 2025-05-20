@@ -28,26 +28,8 @@ const HomePage = () => {
       <Hero />
       <About />
 
-      {galleryData.map(({ id, title, location, images, color }) => {
-        // Individuelle Vorschau-Index pro Galerie definieren
-        let previewIndex = 0;
-        if (id === 1) previewIndex = 1;
-        if (id === 2) previewIndex = 15;
-        if (id === 3) previewIndex = 10;
-        if (id === 4) previewIndex = 2;
-
-        return (
-          <Gallery
-            key={id}
-            title={title}
-            location={location}
-            images={images}
-            color={color}
-            linkTo={`/fc${id}`}
-            previewIndex={previewIndex}
-          />
-        );
-      })}
+      {/* Alle Galerien auf einmal als Prop an Gallery übergeben */}
+      <Gallery galleries={galleryData} />
 
       <Contact />
     </>

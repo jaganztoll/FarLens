@@ -136,19 +136,6 @@ p {
   transform: scale(1.02);
 }
 
-.gallery img {
-  max-width: 45%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.02);
-}
-
 /* ========================= */
 /* Utility / Helpers         */
 /* ========================= */
