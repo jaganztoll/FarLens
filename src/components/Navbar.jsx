@@ -71,8 +71,8 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/#contact" onClick={closeMenu}>
-                Contact
+              <Link to="/#gallery" onClick={closeMenu}>
+                Gallery
               </Link>
             </li>
             <li>
@@ -106,8 +106,8 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#contact" onClick={closeMenu}>
-                    Contact
+                  <Link to="/#gallery" onClick={closeMenu}>
+                    Gallery
                   </Link>
                 </li>
                 <li>
