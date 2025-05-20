@@ -80,6 +80,7 @@
     background-color: currentColor;
 }
 
+/* Hover */
 .nav-locations a.fc3:hover {
     color: var(--accent-fc3);
 }
@@ -96,6 +97,28 @@
     color: var(--accent-fc6);
 }
 
+/* Active Page */
+.nav-locations a.active.fc3 {
+    color: var(--accent-fc3);
+}
+
+.nav-locations a.active.fc4 {
+    color: var(--accent-fc4);
+}
+
+.nav-locations a.active.fc5 {
+    color: var(--accent-fc5);
+}
+
+.nav-locations a.active.fc6 {
+    color: var(--accent-fc6);
+}
+
+.nav-locations a.active::after {
+    background-color: currentColor;
+}
+
+/* Selection */
 .nav-locations a.fc3::selection {
     background-color: var(--accent-fc3);
     color: var(--light);

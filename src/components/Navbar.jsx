@@ -1,12 +1,13 @@
 import "../styles/Navbar.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import siteLogo from "../assets/farlens.png";
 import personalLogo from "../assets/JGwhite.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,22 +35,46 @@ function Navbar() {
           {/* Locations (desktop only) */}
           <ul className="nav-locations desktop-only">
             <li>
-              <Link to="/fc3" className="fc3" onClick={closeMenu}>
+              <Link
+                to="/fc3"
+                className={`fc3 ${
+                  location.pathname === "/fc3" ? "active" : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Rook Islands
               </Link>
             </li>
             <li>
-              <Link to="/fc4" className="fc4" onClick={closeMenu}>
+              <Link
+                to="/fc4"
+                className={`fc4 ${
+                  location.pathname === "/fc4" ? "active" : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Kyrat
               </Link>
             </li>
             <li>
-              <Link to="/fc5" className="fc5" onClick={closeMenu}>
+              <Link
+                to="/fc5"
+                className={`fc5 ${
+                  location.pathname === "/fc5" ? "active" : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Hope County
               </Link>
             </li>
             <li>
-              <Link to="/fc6" className="fc6" onClick={closeMenu}>
+              <Link
+                to="/fc6"
+                className={`fc6 ${
+                  location.pathname === "/fc6" ? "active" : ""
+                }`}
+                onClick={closeMenu}
+              >
                 Yara
               </Link>
             </li>
@@ -122,22 +147,46 @@ function Navbar() {
 
               <ul className="nav-locations">
                 <li>
-                  <Link to="/fc3" className="fc3" onClick={closeMenu}>
+                  <Link
+                    to="/fc3"
+                    className={`fc3 ${
+                      location.pathname === "/fc3" ? "active" : ""
+                    }`}
+                    onClick={closeMenu}
+                  >
                     Rook Islands
                   </Link>
                 </li>
                 <li>
-                  <Link to="/fc4" className="fc4" onClick={closeMenu}>
+                  <Link
+                    to="/fc4"
+                    className={`fc4 ${
+                      location.pathname === "/fc4" ? "active" : ""
+                    }`}
+                    onClick={closeMenu}
+                  >
                     Kyrat
                   </Link>
                 </li>
                 <li>
-                  <Link to="/fc5" className="fc5" onClick={closeMenu}>
+                  <Link
+                    to="/fc5"
+                    className={`fc5 ${
+                      location.pathname === "/fc5" ? "active" : ""
+                    }`}
+                    onClick={closeMenu}
+                  >
                     Hope County
                   </Link>
                 </li>
                 <li>
-                  <Link to="/fc6" className="fc6" onClick={closeMenu}>
+                  <Link
+                    to="/fc6"
+                    className={`fc6 ${
+                      location.pathname === "/fc6" ? "active" : ""
+                    }`}
+                    onClick={closeMenu}
+                  >
                     Yara
                   </Link>
                 </li>
