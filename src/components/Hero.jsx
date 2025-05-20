@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 import "../styles/Hero.css";
 
 const images = [
-  "/assets/fc3/candy-hartawan-yOajPc4fBUU-unsplash.jpg",
-  "/assets/fc4/tim-van-kempen-mpYKQK3GzSE-unsplash.jpg",
-  "/assets/fc5/steven-cordes-HD0D7bKZ_4k-unsplash.jpg",
-  "/assets/fc6/alexander-kunze-uLh71gTmZ4g-unsplash.jpg",
+  "/assets/hero/Hero1.jpg",
+  "/assets/hero/Hero2.jpg",
+  "/assets/hero/Hero4.jpg",
+  "/assets/hero/Hero4.jpg",
 ];
 
 function Hero() {
