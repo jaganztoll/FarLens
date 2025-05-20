@@ -1,5 +1,6 @@
-import "./Navbar.css";
+import "../styles/Navbar.css";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import siteLogo from "../assets/farlens.png";
 import personalLogo from "../assets/JGwhite.png";
 
@@ -32,24 +33,24 @@ function Navbar() {
           {/* Locations nur im Desktop sichtbar */}
           <ul className="nav-locations desktop-only">
             <li>
-              <a href="#rook" className="fc3">
+              <Link to="/fc3" className="fc3" onClick={closeMenu}>
                 Rook Islands
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#kyrat" className="fc4">
+              <Link to="/fc4" className="fc4" onClick={closeMenu}>
                 Kyrat
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#hope" className="fc5">
+              <Link to="/fc5" className="fc5" onClick={closeMenu}>
                 Hope County
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#yara" className="fc6">
+              <Link to="/fc6" className="fc6" onClick={closeMenu}>
                 Yara
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -58,13 +59,19 @@ function Navbar() {
           {/* Desktop Menü */}
           <ul className="nav-links desktop-only">
             <li>
-              <a href="#hero">Home</a>
+              <Link to="/#hero" onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/#about" onClick={closeMenu}>
+                About
+              </Link>
             </li>
             <li>
-              <a href="#footer">Contact</a>
+              <Link to="/#contact" onClick={closeMenu}>
+                Contact
+              </Link>
             </li>
             <li>
               <a
@@ -85,21 +92,21 @@ function Navbar() {
           {/* Mobile Menü mit Links & Locations */}
           {menuOpen && (
             <div className="mobile-menu">
-              <ul className="nav-links">
+              <ul className="nav-links mobile-only">
                 <li>
-                  <a href="#hero" onClick={closeMenu}>
+                  <Link to="/#hero" onClick={closeMenu}>
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" onClick={closeMenu}>
+                  <Link to="/#about" onClick={closeMenu}>
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#footer" onClick={closeMenu}>
+                  <Link to="/#contact" onClick={closeMenu}>
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -114,24 +121,24 @@ function Navbar() {
 
               <ul className="nav-locations">
                 <li>
-                  <a href="#rook" className="fc3" onClick={closeMenu}>
+                  <Link to="/fc3" className="fc3" onClick={closeMenu}>
                     Rook Islands
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#kyrat" className="fc4" onClick={closeMenu}>
+                  <Link to="/fc4" className="fc4" onClick={closeMenu}>
                     Kyrat
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#hope" className="fc5" onClick={closeMenu}>
+                  <Link to="/fc5" className="fc5" onClick={closeMenu}>
                     Hope County
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#yara" className="fc6" onClick={closeMenu}>
+                  <Link to="/fc6" className="fc6" onClick={closeMenu}>
                     Yara
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

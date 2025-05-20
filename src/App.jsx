@@ -1,29 +1,35 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
-import galleryData from "./data/galleryData";
+
+import HomePage from "./pages/HomePage";
+import FC3Gallery from "./pages/FC3Gallery";
+import FC4Gallery from "./pages/FC4Gallery";
+import FC5Gallery from "./pages/FC5Gallery";
+import FC6Gallery from "./pages/FC6Gallery";
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        {galleryData.map(({ id, title, location, images, color }) => (
-          <Gallery
-            key={id}
-            title={title}
-            location={location}
-            images={images}
-            color={color}
-          />
-        ))}
+        <Routes>
+          {/* Startseite mit Hero, About, Gallery and Contact */}
+          <Route path="/" element={<HomePage />} />
+
+          {/* Far Cry Galerien */}
+          <Route path="/fc3" element={<FC3Gallery />} />
+          <Route path="/fc4" element={<FC4Gallery />} />
+          <Route path="/fc5" element={<FC5Gallery />} />
+          <Route path="/fc6" element={<FC6Gallery />} />
+
+          {/* Optional: 404-Seite */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   );
 }
 

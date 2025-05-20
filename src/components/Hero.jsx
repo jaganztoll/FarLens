@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./Hero.css";
+import "../styles/Hero.css";
 
 const images = [
   "/assets/fc3/candy-hartawan-yOajPc4fBUU-unsplash.jpg",

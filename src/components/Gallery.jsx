@@ -1,8 +1,12 @@
-import "./Gallery.css";
+import "../styles/Gallery.css";
 
 function Gallery({ title, location, images, color }) {
   return (
-    <section className="gallery" style={{ borderTop: `4px solid ${color}` }}>
+    <section
+      id="gallery"
+      className="gallery"
+      style={{ borderTop: `4px solid ${color}` }}
+    >
       <h2>{title}</h2>
       <p>{location}</p>
       <div className="gallery-grid">
