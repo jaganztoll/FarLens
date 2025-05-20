@@ -5,7 +5,7 @@ function Footer() {
     <footer id="footer" className="footer">
       <p>
         &copy; {new Date().getFullYear()} FarLens – Photography inspired by Far
-        Cry
+        TEST Cry
       </p>
     </footer>
   );
