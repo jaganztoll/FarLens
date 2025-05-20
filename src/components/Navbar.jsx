@@ -122,50 +122,22 @@ function Navbar() {
 
               <ul className="nav-locations">
                 <li>
-                  <Link
-                    to="/fc3"
-                    className="fc3"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setTimeout(() => window.scrollTo(0, 0), 0);
-                    }}
-                  >
+                  <Link to="/fc3" className="fc3" onClick={closeMenu}>
                     Rook Islands
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/fc4"
-                    className="fc4"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setTimeout(() => window.scrollTo(0, 0), 0);
-                    }}
-                  >
+                  <Link to="/fc4" className="fc4" onClick={closeMenu}>
                     Kyrat
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/fc5"
-                    className="fc5"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setTimeout(() => window.scrollTo(0, 0), 0);
-                    }}
-                  >
+                  <Link to="/fc5" className="fc5" onClick={closeMenu}>
                     Hope County
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to="/fc6"
-                    className="fc6"
-                    onClick={() => {
-                      setMenuOpen(false);
-                      setTimeout(() => window.scrollTo(0, 0), 0);
-                    }}
-                  >
+                  <Link to="/fc6" className="fc6" onClick={closeMenu}>
                     Yara
                   </Link>
                 </li>
