@@ -23,7 +23,9 @@ function Navbar() {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-content">
         <div className="site-logo">
-          <img src={siteLogo} alt="FarLens" />
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            <img src={siteLogo} alt="FarLens" />
+          </Link>
         </div>
 
         <div className="center-section">

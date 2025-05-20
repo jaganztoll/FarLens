@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import "../styles/Gallery.css";
 
-function Gallery({ title, location, images, color }) {
+function Gallery({ title, location, images, color, linkTo, previewIndex = 0 }) {
   return (
     <section
       id="gallery"
@@ -10,11 +11,14 @@ function Gallery({ title, location, images, color }) {
       <h2>{title}</h2>
       <p>{location}</p>
       <div className="gallery-grid">
-        {images.map((img, index) => (
-          <div key={index} className="gallery-item">
-            <img src={img} alt={`${title} - Bild ${index + 1}`} />
-          </div>
-        ))}
+        {/* Nur das Bild am previewIndex anzeigen */}
+        <Link to={linkTo} className="gallery-item">
+          <img
+            src={images[previewIndex]}
+            alt={`${title} - Vorschau Bild`}
+            loading="lazy"
+          />
+        </Link>
       </div>
     </section>
   );

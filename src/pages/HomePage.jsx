@@ -12,7 +12,6 @@ const HomePage = () => {
 
   useEffect(() => {
     if (hash) {
-      // Timeout für sicherer Renderzeit, damit DOM da ist
       setTimeout(() => {
         const element = document.querySelector(hash);
         if (element) {
@@ -20,23 +19,36 @@ const HomePage = () => {
         }
       }, 0);
     } else {
-      // Scroll zum Seitenanfang, falls kein Hash
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [hash]);
+
   return (
     <>
       <Hero />
       <About />
-      {galleryData.map(({ id, title, location, images, color }) => (
-        <Gallery
-          key={id}
-          title={title}
-          location={location}
-          images={images}
-          color={color}
-        />
-      ))}
+
+      {galleryData.map(({ id, title, location, images, color }) => {
+        // Individuelle Vorschau-Index pro Galerie definieren
+        let previewIndex = 0;
+        if (id === 1) previewIndex = 1;
+        if (id === 2) previewIndex = 15;
+        if (id === 3) previewIndex = 10;
+        if (id === 4) previewIndex = 2;
+
+        return (
+          <Gallery
+            key={id}
+            title={title}
+            location={location}
+            images={images}
+            color={color}
+            linkTo={`/fc${id}`}
+            previewIndex={previewIndex}
+          />
+        );
+      })}
+
       <Contact />
     </>
   );
