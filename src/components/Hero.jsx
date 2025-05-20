@@ -19,7 +19,7 @@ function Hero() {
       <Swiper
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
         navigation={true}
-        pagination={true}
+        pagination={{ clickable: true }}
         loop={true}
         effect="fade"
         speed={1000}
@@ -27,7 +27,7 @@ function Hero() {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        allowTouchMove={false}
+        allowTouchMove={true}
         watchSlidesProgress={true}
         slidesPerView={1}
       >
