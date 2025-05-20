@@ -16,7 +16,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Funktion um Menü beim Klick auf Link zu schließen
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -32,7 +31,7 @@ function Navbar() {
           <div className="personal-logo">
             <img src={personalLogo} alt="Julian Gruber" />
           </div>
-          {/* Locations nur im Desktop sichtbar */}
+          {/* Locations (desktop only) */}
           <ul className="nav-locations desktop-only">
             <li>
               <Link to="/fc3" className="fc3" onClick={closeMenu}>
@@ -58,7 +57,7 @@ function Navbar() {
         </div>
 
         <nav className="nav-right">
-          {/* Desktop Menü */}
+          {/* Desktop */}
           <ul className="nav-links desktop-only">
             <li>
               <Link to="/#hero" onClick={closeMenu}>
@@ -91,7 +90,7 @@ function Navbar() {
             {menuOpen ? "✕" : "☰"}
           </div>
 
-          {/* Mobile Menü mit Links & Locations */}
+          {/* Mobile Links & Locations */}
           {menuOpen && (
             <div className="mobile-menu">
               <ul className="nav-links mobile-only">
