@@ -60,7 +60,7 @@ section[class*="fc-gallery"] .location {
 
 @media (max-width: 1350px) {
     .masonry {
-        column-count: 1;
+        column-count: 2;
     }
 
     section[class*="fc-gallery"] {
