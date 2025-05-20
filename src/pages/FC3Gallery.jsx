@@ -5,7 +5,7 @@ const FC3Gallery = () => {
   const fc3 = galleryData.find((entry) => entry.id === 1);
 
   return (
-    <section id="rook" className="fc3-gallery">
+    <section id="rook" className="fc-gallery fc3-gallery">
       <h2>{fc3.title}</h2>
       <p className="location">{fc3.location}</p>
 

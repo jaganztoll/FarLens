@@ -3,7 +3,7 @@ import "../styles/About.css";
 function About() {
   return (
     <section id="about" className="about">
-      <div className="container fullscreen text-center">
+      <div className="container-gallery fullscreen text-center">
         <h2>About the Project</h2>
         <p>
           This project explores the real-world locations that inspired the game

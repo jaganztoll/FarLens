@@ -9,7 +9,7 @@ import "../styles/Hero.css";
 const images = [
   "/assets/hero/Hero1.jpg",
   "/assets/hero/Hero2.jpg",
-  "/assets/hero/Hero4.jpg",
+  "/assets/hero/Hero3.jpg",
   "/assets/hero/Hero4.jpg",
 ];
 
