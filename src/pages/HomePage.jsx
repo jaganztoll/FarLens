@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import galleryData from "../data/galleryData";
-import Contact from "../components/Contact";
 
 const HomePage = () => {
   const { hash } = useLocation();
@@ -30,8 +29,6 @@ const HomePage = () => {
 
       {/* Alle Galerien auf einmal als Prop an Gallery übergeben */}
       <Gallery galleries={galleryData} />
-
-      <Contact />
     </>
   );
 };
