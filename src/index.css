@@ -74,7 +74,7 @@ body {
 /* ========================= */
 
 section {
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
   width: 100%;
 }
 
@@ -109,15 +109,23 @@ h2 {
 }
 
 h3 {
-  font-weight: 700;
-  color: var(--text-dark);
   font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 p {
   font-size: 1.3rem;
   max-width: 65ch;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1.1rem;
 }
 
 /* ========================= */
@@ -144,7 +152,6 @@ p {
 .text-center {
   text-align: center;
   align-items: center;
-
 }
 
 .fullscreen {
