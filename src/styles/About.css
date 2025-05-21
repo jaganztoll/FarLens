@@ -2,3 +2,7 @@
     background-color: var(--dark-90);
     color: var(--light);
 }
+
+.about p {
+    max-width: 70%;
+}

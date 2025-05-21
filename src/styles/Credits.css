@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+.credits h4 {
+    margin-bottom: 1rem;
+}
+
 .fc3-credits {
     color: var(--accent-fc3);
 }

@@ -2,12 +2,21 @@ import "../styles/Credits.css";
 
 function Credits() {
   return (
-    <main id="credits" className="credits fullscreen">
+    <main id="credits" className="credits">
       <h2>Photo Credits</h2>
       <p>
-        The following photographers and creators provided the visuals that
-        inspired and shaped FarLens. We thank them for sharing their amazing
-        work.
+        The photographers and creators listed below provided the stunning
+        visuals that inspired and helped shape FarLens. All images are sourced
+        from the{" "}
+        <a
+          href="https://unsplash.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Unsplash
+        </a>{" "}
+        platform, and I sincerely thank each artist for sharing their amazing
+        work with the community.
       </p>
 
       <div className="credits-grid">
