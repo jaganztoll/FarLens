@@ -1,0 +1,33 @@
+.credits {
+    padding: 10rem 4rem 6rem;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem 4rem;
+    margin-top: 2rem;
+}
+
+.fc3-credits {
+    color: var(--accent-fc3);
+}
+
+.fc4-credits {
+    color: var(--accent-fc4);
+}
+
+.fc5-credits {
+    color: var(--accent-fc5);
+}
+
+.fc6-credits {
+    color: var(--accent-fc6);
+}
+
+@media (max-width: 1351px) {
+    .credits {
+        padding: 15rem 4rem 4rem;
+    }
+}

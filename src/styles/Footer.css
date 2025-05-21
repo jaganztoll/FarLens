@@ -1,0 +1,12 @@
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--dark-80);
+    color: var(--light);
+}
+
+.credits-link a {
+    color: var(--light);
+    text-decoration: underline;
+    font-size: 1rem;
+}

@@ -2,7 +2,6 @@ section[class*="fc-gallery"] {
     padding: 10rem 4rem 6rem;
     background-color: var(--light);
     color: var(--dark);
-    margin: 0 auto;
 }
 
 section[class*="fc-gallery"] h2 {
