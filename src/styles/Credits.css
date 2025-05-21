@@ -6,10 +6,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem 2rem;
-    margin: 0 auto;
-    max-width: 1350px;
     width: 100%;
-    padding: 0 1rem;
 }
 
 .credits h4 {
@@ -41,6 +38,5 @@
 @media (max-width: 1351px) {
     .credits-grid {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 480px;
     }
 }
