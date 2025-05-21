@@ -9,6 +9,15 @@
     width: 100%;
 }
 
+.credits-grid section {
+    max-width: 100%;
+}
+
+.credits-grid li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .credits h4 {
     margin-bottom: 1rem;
 }
