@@ -20,7 +20,7 @@ function Credits() {
       </p>
 
       <div className="credits-grid">
-        <section className="credit">
+        <section>
           <h3 className="fc3-credits">Rook Island</h3>
           <h4>Inspired by Indonesia</h4>
           <ul>
@@ -56,7 +56,7 @@ function Credits() {
           </ul>
         </section>
 
-        <section className="credit">
+        <section>
           <h3 className="fc4-credits">Kyrat</h3>
           <h4>Inspired by Nepal</h4>
           <ul>
@@ -96,7 +96,7 @@ function Credits() {
           </ul>
         </section>
 
-        <section className="credit">
+        <section>
           <h3 className="fc5-credits">Hope County</h3>
           <h4>Montana, USA</h4>
           <ul>
@@ -126,7 +126,7 @@ function Credits() {
           </ul>
         </section>
 
-        <section className="credit">
+        <section>
           <h3 className="fc6-credits">Yara</h3>
           <h4>Inspired by Cuba</h4>
           <ul>
