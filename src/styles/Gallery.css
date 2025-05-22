@@ -1,100 +1,92 @@
-.gallery-row {
-    display: flex;
-    gap: 2rem;
+.gallery-wrapper {
     overflow-x: auto;
-    padding: 2rem 0;
-    scroll-behavior: smooth;
+    display: flex;
     justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
-    max-width: 100%;
+    /* Zentriert standardmäßig */
+    padding: 0 20px;
+}
 
-    /* --- Scroll-Snap --- */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+/* Optional: Scrollbar Styling */
+.gallery-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
 
-    &::-webkit-scrollbar {
-        height: 10px;
-    }
+.gallery-wrapper::-webkit-scrollbar-thumb {
+    background: var(--dark-30);
+    border-radius: 4px;
+}
 
-    &::-webkit-scrollbar-track {
-        background: var(--light-20);
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: var(--dark-50);
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-        background: var(--dark-70);
-    }
+.gallery-row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 400px;
+    /* feste Breite pro Kachel */
+    gap: 1.5rem;
+    padding: 20px 0;
+    width: max-content;
 }
 
 .gallery-card {
-    flex: 0 0 auto;
-    width: 320px;
-    max-width: calc(100% - 4rem);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px var(--dark-20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    scroll-snap-align: start;
-    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px var(--dark-10);
+    transition: transform 0.3s ease;
+    background-color: var(--light);
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .gallery-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px var(--dark-30);
+    transform: scale(1.03);
 }
 
 .image-wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
     position: relative;
-    height: 200px;
-    overflow: hidden;
 }
 
 .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px 10px 0 0;
-}
-
-.placeholder {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark-70);
-    font-style: italic;
-    border-radius: 10px 10px 0 0;
+    border-radius: 8px;
 }
 
 .gallery-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-60);
+    right: 0;
+    bottom: 0;
+    background: var(--dark-70);
     color: var(--light);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 12px;
+    font-size: 1.2rem;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
-    padding: 1rem;
-    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .gallery-card:hover .gallery-overlay {
     opacity: 1;
+}
+
+/* 📱 Für kleinere Bildschirme: Linksabstand statt Zentrierung */
+@media (max-width: 1024px) {
+    .gallery-wrapper {
+        justify-content: flex-start;
+    }
 }
