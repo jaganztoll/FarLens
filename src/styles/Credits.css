@@ -7,6 +7,14 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem 2rem;
     width: 100%;
+    max-width: 1350px;
+    /* Zentriergrenze */
+    margin: 0 auto;
+    /* Zentriert den Container */
+    padding: 0 1rem;
+    /* Innenabstand auf kleinen Screens */
+    box-sizing: border-box;
+    /* Wichtig für korrektes Padding-Verhalten */
 }
 
 .credits h4 {
@@ -45,5 +53,17 @@
 @media (max-width: 1351px) {
     .credits-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .credits-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        justify-items: center;
+    }
+
+    .credits-grid section {
+        width: 100%;
     }
 }
