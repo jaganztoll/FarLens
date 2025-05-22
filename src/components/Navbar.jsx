@@ -23,7 +23,13 @@ function Navbar() {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-content">
         <div className="site-logo">
-          <Link to="/" onClick={() => setMenuOpen(false)}>
+          <Link
+            to="/"
+            onClick={() => {
+              setMenuOpen(false);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
             <img src={siteLogo} alt="FarLens" />
           </Link>
         </div>
