@@ -7,15 +7,18 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem 2rem;
     width: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    box-sizing: border-box;
 }
 
 .credits h4 {
     margin-bottom: 1rem;
 }
+
+.credits-grid ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
 
 .fc3-credits {
     color: var(--accent-fc3);
@@ -39,9 +42,8 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1351px) {
     .credits-grid {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
     }
 }
