@@ -45,6 +45,11 @@
     margin-bottom: 1rem;
 }
 
+.credits p {
+    margin-bottom: 1rem;
+}
+
+
 .credits-grid ul li {
     display: flex;
     align-items: center;

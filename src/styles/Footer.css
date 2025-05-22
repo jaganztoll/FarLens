@@ -1,3 +1,8 @@
+#footer *::selection {
+    background-color: var(--light-90);
+    color: var(--dark);
+}
+
 .footer {
     text-align: center;
     padding: 1rem;
@@ -8,5 +13,5 @@
 .credits-link a {
     color: var(--light);
     text-decoration: underline;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
