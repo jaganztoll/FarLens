@@ -27,6 +27,7 @@
 
 .credits {
     padding: 10rem 4rem 2rem;
+
 }
 
 .credits-grid {
@@ -99,7 +100,7 @@
 /* Mobile */
 @media (max-width: 1351px) {
     .credits {
-        padding: 15rem 4rem 2rem;
+        padding: 15rem 2rem 2rem;
     }
 }
 
@@ -111,7 +112,7 @@
 
 @media (max-width: 768px) {
     .credits-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         max-width: 480px;
         justify-items: center;
         padding: 0 2rem;
