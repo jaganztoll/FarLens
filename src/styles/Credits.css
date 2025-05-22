@@ -1,3 +1,30 @@
+/* Selection */
+#credits *::selection {
+    background-color: var(--dark-90);
+    color: var(--light);
+}
+
+/* Accent Selection */
+#credits .fc3-credits ::selection {
+    background-color: var(--accent-fc3);
+    color: var(--light);
+}
+
+#credits .fc4-credits ::selection {
+    background-color: var(--accent-fc4);
+    color: var(--light);
+}
+
+#credits .fc5-credits ::selection {
+    background-color: var(--accent-fc5);
+    color: var(--dark);
+}
+
+#credits .fc6-credits ::selection {
+    background-color: var(--accent-fc6);
+    color: var(--light);
+}
+
 .credits {
     padding: 10rem 4rem 2rem;
 }
@@ -8,57 +35,83 @@
     gap: 0.5rem 2rem;
     width: 100%;
     max-width: 1350px;
-    /* Zentriergrenze */
     margin: 0 auto;
-    /* Zentriert den Container */
     padding: 0 1rem;
-    /* Innenabstand auf kleinen Screens */
     box-sizing: border-box;
-    /* Wichtig für korrektes Padding-Verhalten */
 }
 
 .credits h4 {
     margin-bottom: 1rem;
 }
 
-.credits-grid ul {
-    padding-left: 0;
-    margin: 0;
-    list-style-position: inside;
+.credits-grid ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 1.8rem;
+    list-style: none;
 }
 
+.credits-grid ul li::before {
+    content: "•";
+    color: inherit;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-.fc3-credits {
+/* Accent Colors h3 */
+.fc3-credits>h3 {
     color: var(--accent-fc3);
 }
 
-.fc4-credits {
+.fc4-credits>h3 {
     color: var(--accent-fc4);
 }
 
-.fc5-credits {
+.fc5-credits>h3 {
     color: var(--accent-fc5);
 }
 
-.fc6-credits {
+.fc6-credits>h3 {
     color: var(--accent-fc6);
 }
 
+/* Accent Colors ul li */
+.fc3-credits ul li::before {
+    color: var(--accent-fc3);
+}
+
+.fc4-credits ul li::before {
+    color: var(--accent-fc4);
+}
+
+.fc5-credits ul li::before {
+    color: var(--accent-fc5);
+}
+
+.fc6-credits ul li::before {
+    color: var(--accent-fc6);
+}
+
+/* Mobile */
 @media (max-width: 1351px) {
     .credits {
         padding: 15rem 4rem 2rem;
     }
 }
 
-@media (max-width: 1351px) {
+@media (max-width: 1024px) {
     .credits-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .credits-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         max-width: 600px;
         justify-items: center;
     }

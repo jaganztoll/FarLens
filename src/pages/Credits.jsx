@@ -20,8 +20,8 @@ function Credits() {
       </p>
 
       <div className="credits-grid">
-        <section>
-          <h3 className="fc3-credits">Rook Island</h3>
+        <section className="fc3-credits">
+          <h3>Rook Island</h3>
           <h4>Inspired by Indonesia</h4>
           <ul>
             <li>Alena Shekhovtcova</li>
@@ -56,8 +56,8 @@ function Credits() {
           </ul>
         </section>
 
-        <section>
-          <h3 className="fc4-credits">Kyrat</h3>
+        <section className="fc4-credits">
+          <h3>Kyrat</h3>
           <h4>Inspired by Nepal</h4>
           <ul>
             <li>Anup Shrestha</li>
@@ -96,8 +96,8 @@ function Credits() {
           </ul>
         </section>
 
-        <section>
-          <h3 className="fc5-credits">Hope County</h3>
+        <section className="fc5-credits">
+          <h3>Hope County</h3>
           <h4>Montana, USA</h4>
           <ul>
             <li>Alex Moliski</li>
@@ -126,8 +126,8 @@ function Credits() {
           </ul>
         </section>
 
-        <section>
-          <h3 className="fc6-credits">Yara</h3>
+        <section className="fc6-credits">
+          <h3>Yara</h3>
           <h4>Inspired by Cuba</h4>
           <ul>
             <li>Alex Meier</li>
