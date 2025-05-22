@@ -20,278 +20,276 @@ function Credits() {
       </p>
 
       <div className="credits-grid">
-        <div>
-          {/* FAR CRY 3 */}
-          <section className="fc3-credits">
-            <h3>Rook Island</h3>
-            <h4>Inspired by Indonesia</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@alena_shekhovtcova"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Alena Shekhovtcova
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@aljhonumlas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Aljhon Umlas
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@andrvv21"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Andrew A.
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@antonmislawsky"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Anton Mislawsky
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@aridinar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ari Dinar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@ben_is_flayed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Benhur Leo
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@candy_craft"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Candy Hartawan
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@stark1116"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Eswar M
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@elliotm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Elliot M
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@ffstop"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Fotis Fotopoulos
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@oww"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Geio Tischler
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@hytshin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Hayato Shin
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@helenngoc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Helen Ngoc
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@ion66574"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ion Ivan Sipilov
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@jcollesano"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Josh Collesano
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@joshuakettle"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Joshua Kettle
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@k_sariwating"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Kaja Sariwating
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@nuarharuha"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Nhn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@paul_nic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Paolo Nicolello
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@falairachel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Rachel Salles
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@rahmatzumarli"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Rahmat Zumarli
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@align_all"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Ranjith Alingal
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@sambalye"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sam Balye
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@silasbaisch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Silas Baisch
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@springsimon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Simon Spring
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@catauggie"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Snapsaga
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@theian20"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Ian
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@krzhck"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  YH Zhou
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://unsplash.com/de/@heythisisyulia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Yulia Z.
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
+        {/* Far Cry 3 */}
+        <section className="fc3-credits">
+          <h3>Rook Island</h3>
+          <h4>Inspired by Indonesia</h4>
+          <ul>
+            <li>
+              <a
+                href="https://unsplash.com/de/@alena_shekhovtcova"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Alena Shekhovtcova
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@aljhonumlas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Aljhon Umlas
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@andrvv21"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Andrew A.
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@antonmislawsky"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Anton Mislawsky
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@aridinar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ari Dinar
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@ben_is_flayed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Benhur Leo
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@candy_craft"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Candy Hartawan
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@stark1116"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Eswar M
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@elliotm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Elliot M
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@ffstop"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fotis Fotopoulos
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@oww"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Geio Tischler
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@hytshin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hayato Shin
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@helenngoc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Helen Ngoc N
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@ion66574"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ion Ivan Sipilov
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@jcollesano"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Josh Collesano
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@joshuakettle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Joshua Kettle
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@k_sariwating"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kaja Sariwating
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@nuarharuha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nhn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@paul_nic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Paolo Nicolello
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@falairachel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rachel Salles
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@rahmatzumarli"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Rahmat Zumarli
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@align_all"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ranjith Alingal
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@sambalye"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sam Balye
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@silasbaisch"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Silas Baisch
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@springsimon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Simon Spring
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@catauggie"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Snapsaga
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@theian20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Ian
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@krzhck"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yh Zhou
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://unsplash.com/de/@heythisisyulia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yulia Z.
+              </a>
+            </li>
+          </ul>
+        </section>
 
-        {/* FAR CRY 4 */}
+        {/* Far Cry 4 */}
         <section className="fc4-credits">
           <h3>Kyrat</h3>
           <h4>Inspired by Nepal</h4>
@@ -596,7 +594,7 @@ function Credits() {
           </ul>
         </section>
 
-        {/* FAR CRY 5 */}
+        {/* Far Cry 5 */}
         <section className="fc5-credits">
           <h3>Hope County</h3>
           <h4>Montana, USA</h4>
@@ -811,7 +809,7 @@ function Credits() {
           </ul>
         </section>
 
-        {/* FAR CRY 6 */}
+        {/* Far Cry 6 */}
         <section className="fc6-credits">
           <h3>Yara</h3>
           <h4>Inspired by Cuba</h4>
