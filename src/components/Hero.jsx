@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -15,22 +14,6 @@ const images = [
 ];
 
 function Hero() {
-  useEffect(() => {
-    function setVh() {
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-    }
-
-    setVh();
-    window.addEventListener("resize", setVh);
-    window.addEventListener("load", setVh);
-
-    return () => {
-      window.removeEventListener("resize", setVh);
-      window.removeEventListener("load", setVh);
-    };
-  }, []);
-
   return (
     <section id="hero" className="hero-carousel">
       <Swiper
