@@ -1,12 +1,11 @@
 .gallery-wrapper {
     overflow-x: auto;
+    overflow-y: visible;
     display: flex;
     justify-content: center;
-    /* Zentriert standardmäßig */
     padding: 0 20px;
 }
 
-/* Optional: Scrollbar Styling */
 .gallery-wrapper::-webkit-scrollbar {
     height: 8px;
 }
@@ -20,7 +19,6 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 400px;
-    /* feste Breite pro Kachel */
     gap: 1.5rem;
     padding: 20px 0;
     width: max-content;
@@ -32,7 +30,7 @@
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 8px var(--dark-10);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: var(--light);
     width: 100%;
     flex-shrink: 0;
@@ -40,6 +38,31 @@
 
 .gallery-card:hover {
     transform: scale(1.03);
+}
+
+/* Hover Color */
+.gallery-card[data-id="1"]:hover {
+    box-shadow:
+        0 4px 8px 1.5px var(--accent-fc3),
+        0 0 6px 2px var(--accent-fc3);
+}
+
+.gallery-card[data-id="2"]:hover {
+    box-shadow:
+        0 4px 8px 1.5px var(--accent-fc4),
+        0 0 6px 2px var(--accent-fc4);
+}
+
+.gallery-card[data-id="3"]:hover {
+    box-shadow:
+        0 4px 8px 1.5px var(--accent-fc5),
+        0 0 6px 2px var(--accent-fc5);
+}
+
+.gallery-card[data-id="4"]:hover {
+    box-shadow:
+        0 4px 8px 1.5px var(--accent-fc6),
+        0 0 6px 2px var(--accent-fc6);
 }
 
 .image-wrapper {
@@ -84,7 +107,8 @@
     opacity: 1;
 }
 
-/* 📱 Für kleinere Bildschirme: Linksabstand statt Zentrierung */
+
+/* Mobile */
 @media (max-width: 1024px) {
     .gallery-wrapper {
         justify-content: flex-start;

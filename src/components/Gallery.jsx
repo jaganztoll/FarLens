@@ -25,7 +25,12 @@ const Gallery = ({ galleries }) => {
           const routeId = idToRouteMap[id] || id;
 
           return (
-            <Link to={`/fc${routeId}`} className="gallery-card" key={id}>
+            <Link
+              to={`/fc${routeId}`}
+              className="gallery-card"
+              key={id}
+              data-id={id}
+            >
               <div className="image-wrapper">
                 {previewImage ? (
                   <img src={previewImage} alt={title} />
