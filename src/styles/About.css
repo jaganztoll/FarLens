@@ -7,3 +7,9 @@
     max-width: 70%;
     margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+    .about p {
+        max-width: 100%;
+    }
+}

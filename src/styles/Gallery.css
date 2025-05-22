@@ -109,8 +109,14 @@
 
 
 /* Mobile */
-@media (max-width: 1024px) {
+@media (max-width: 1700px) {
     .gallery-wrapper {
         justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-row {
+        grid-auto-columns: 300px;
     }
 }
