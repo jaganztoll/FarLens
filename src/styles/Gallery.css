@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    margin-bottom: 4rem;
 }
 
 .gallery-wrapper::-webkit-scrollbar {
@@ -106,7 +107,6 @@
 .gallery-card:hover .gallery-overlay {
     opacity: 1;
 }
-
 
 /* Mobile */
 @media (max-width: 1700px) {
