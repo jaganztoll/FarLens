@@ -68,7 +68,6 @@ body {
   padding: 0 2rem;
 }
 
-
 /* ========================= */
 /* Sections                  */
 /* ========================= */
@@ -159,10 +158,9 @@ li {
   overflow: hidden;
   position: relative;
   justify-content: center;
-
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* ========================= */
