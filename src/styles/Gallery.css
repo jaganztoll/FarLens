@@ -108,6 +108,27 @@
     opacity: 1;
 }
 
+/* Selection Color */
+.gallery-card[data-id="1"] ::selection {
+    background: var(--accent-fc3);
+    color: var(--light);
+}
+
+.gallery-card[data-id="2"] ::selection {
+    background: var(--accent-fc4);
+    color: var(--light);
+}
+
+.gallery-card[data-id="3"] ::selection {
+    background: var(--accent-fc5);
+    color: var(--dark);
+}
+
+.gallery-card[data-id="4"] ::selection {
+    background: var(--accent-fc6);
+    color: var(--light);
+}
+
 /* Mobile */
 @media (max-width: 1700px) {
     .gallery-wrapper {

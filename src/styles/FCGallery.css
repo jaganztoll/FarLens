@@ -50,14 +50,36 @@ section[class*="fc-gallery"] .location {
     color: var(--accent-fc6);
 }
 
+/* Selection */
+.fc3-gallery ::selection {
+    background: var(--accent-fc3);
+    color: var(--light);
+}
+
+.fc4-gallery ::selection {
+    background: var(--accent-fc4);
+    color: var(--light);
+}
+
+.fc5-gallery ::selection {
+    background: var(--accent-fc5);
+    color: var(--dark);
+}
+
+.fc6-gallery ::selection {
+    background: var(--accent-fc6);
+    color: var(--light);
+}
+
+
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .masonry {
         column-count: 2;
     }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 786px) {
     .masonry {
         column-count: 1;
     }
