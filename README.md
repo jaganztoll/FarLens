@@ -1,3 +1,5 @@
+![Home](src/assets/readme.png)
+
 # FarLens
 
 FarLens is a minimalist and artistic web project that showcases the real-world landscapes featured in the _Far Cry_ video game series (parts 3 to 6) through stunning photography and clean design.
