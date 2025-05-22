@@ -39,8 +39,9 @@
     }
 }
 
-@media (max-width: 1351px) {
+@media (max-width: 768px) {
     .credits-grid {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
     }
 }
