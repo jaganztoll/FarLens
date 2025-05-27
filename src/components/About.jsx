@@ -6,32 +6,27 @@ function About() {
       <div className="container fullscreen text-center">
         <h2>About the Project</h2>
         <p>
-          This project explores the real-world locations that inspired the game
-          worlds of <strong>Far Cry 3 through 6</strong>. The environments in
-          the Far Cry series are more than just scenery. They play an active
-          role in shaping the atmosphere and storytelling. This website reveals
-          the geographic and cultural sources behind these iconic digital
-          landscapes.
+          This project is a tribute to the <strong>Far Cry</strong> series, showcasing the real-world locations
+          that inspired the game worlds of <strong>Far Cry 3</strong> through <strong>Far Cry 6</strong>.
+          The environments in these titles are more than just visual set pieces – they help shape the tone,
+          atmosphere, and storytelling of each game.
         </p>
 
         <p>
-          Each region on this site corresponds to one of the game titles and
-          presents real-world locations used by Ubisoft as visual references.
-          These are highlighted through curated color palettes, stylized
-          photography, and short contextual descriptions. The layout follows a{" "}
-          <strong>minimalist, artistic concept</strong>.
+          Each section of the site reflects one game and presents a small collection of real-world images
+          that echo its visual style. The photos are arranged in a simple <strong>masonry layout</strong>
+          and grouped by game title to hint at their geographic inspiration.
         </p>
 
         <p>
-          As a fan of the series, I have always been fascinated by how authentic
-          the game worlds feel.
+          As a fan of the series, I’ve always been fascinated by how authentic and immersive these digital worlds feel.
         </p>
 
         <p>
-          The site was built using <strong>React</strong>,{" "}
-          <strong>JavaScript</strong>, and <strong>CSS</strong>. It focuses on{" "}
-          <strong>responsive design</strong>, clean typography.
+          The site was built using <strong>React</strong>, <strong>JavaScript</strong>, and <strong>CSS</strong>,
+          with a focus on <strong>responsive design</strong> and clean, expressive typography.
         </p>
+
       </div>
     </section>
   );
