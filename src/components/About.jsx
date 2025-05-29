@@ -14,8 +14,8 @@ function About() {
 
         <p>
           Each section of the site reflects one game and presents a small collection of real-world images
-          that echo its visual style. The photos are arranged in a simple <strong>masonry layout</strong>
-          and grouped by game title to hint at their geographic inspiration.
+          that echo its visual style. The photos are arranged in a simple <strong>masonry layout</strong> and
+          grouped by game title to hint at their geographic inspiration.
         </p>
 
         <p>
